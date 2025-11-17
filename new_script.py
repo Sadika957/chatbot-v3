@@ -234,8 +234,8 @@ workflow.add_node("wiki", wiki_node)
 workflow.add_node("final", final_node)
 
 workflow.add_edge(START, "db1")
-workflow.add_conditional_edges("db1", lambda s: bool(s["answer"]), {"true": "final", "false": "db2"})
-workflow.add_conditional_edges("db2", lambda s: bool(s["answer"]), {"true": "final", "false": "google"})
+workflow.add_conditional_edges("db1", lambda s: bool(s["answer"]), {"true": "final", "false": "google"})
+# workflow.add_conditional_edges("db2", lambda s: bool(s["answer"]), {"true": "final", "false": "google"})
 workflow.add_conditional_edges("google", lambda s: bool(s["answer"]), {"true": "final", "false": "wiki"})
 workflow.add_edge("wiki", "final")
 
