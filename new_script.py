@@ -23,16 +23,16 @@ from google.generativeai import configure, GenerativeModel
 # ======================================================
 # 🔐 LOAD API KEYS FROM STREAMLIT SECRETS
 # ======================================================
-# GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
-# GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
 
 
 # os.environ["google_api_key"] = "AIzaSyBMSTBqYv74VqltxMj7G8eUtbuQg8tUROg"
 # os.environ["google_cse_id"] = "94a6404e7eb494900"
 
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")
+# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+# GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")
 
 
 
