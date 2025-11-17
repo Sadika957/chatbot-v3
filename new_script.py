@@ -27,8 +27,8 @@ from google.generativeai import configure, GenerativeModel
 # GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
 
 
-os.environ["google_api_key"] = "AIzaSyBMSTBqYv74VqltxMj7G8eUtbuQg8tUROg"
-os.environ["google_cse_id"] = "94a6404e7eb494900"
+# os.environ["google_api_key"] = "AIzaSyBMSTBqYv74VqltxMj7G8eUtbuQg8tUROg"
+# os.environ["google_cse_id"] = "94a6404e7eb494900"
 
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
