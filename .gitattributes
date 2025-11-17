@@ -1,0 +1,12 @@
+# Track vector DB folders
+small_vector_db/** filter=lfs diff=lfs merge=lfs -text
+small_vector_db__/** filter=lfs diff=lfs merge=lfs -text
+# Track Chroma DB binary files
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.sqlite3 filter=lfs diff=lfs merge=lfs -text
+# General large ML files
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
