@@ -289,6 +289,14 @@ for c in st.session_state.chat[-10:]:
     st.markdown(f"**You:** {c.get('query','')}")
     st.markdown(f"**Bot:** {c.get('answer','')}")
 
+# ======================================================
+# 🧹 Clear Chat History Button
+# ======================================================
+if st.button("🧹 Clear Chat History"):
+    st.session_state.chat = []
+    if os.path.exists(MEMORY_FILE):
+        os.remove(MEMORY_FILE)
+    st.success("Chat history cleared!")
 
 
 
